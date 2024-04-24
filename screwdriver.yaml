@@ -14,15 +14,23 @@ jobs:
       requires: [~pr, ~commit]
       template: rust/rhel8
       steps:
-        - test: |
-            cargo test --release
-        - postbuild: |
-            cargo install --path .     
+        - install-rpms: echo "Skipped - no RPM dependencies"
+        - rustfmt: echo "Skipped - my code is art"
+        - build: |
+            cargo build --release
+            ls -l target/release/ssrfsup
+        - test: cargo test --release
+        - package: echo "Skipped - package not labeled for individual sale"
+        - publish: echo "Skipped - do not publish"
   alma9:
       requires: [~pr, ~commit]
       template: rust/alma9
       steps:
-        - test: |
-            cargo test --release
-        - postbuild: |
-            cargo install --path .  
+        - install-rpms: echo "Skipped - no RPM dependencies"
+        - rustfmt: echo "Skipped - my code is art"
+        - build: |
+            cargo build --release
+            ls -l target/release/ssrfsup
+        - test: cargo test --release
+        - package: echo "Skipped - package not labeled for individual sale"
+        - publish: echo "Skipped - do not publish"
