@@ -1,0 +1,36 @@
+---
+version: 4
+
+annotations:
+  screwdriver.cd/chainPR: true
+
+shared:
+  annotations:
+    screwdriver.cd/cpu: HIGH
+    screwdriver.cd/ram: HIGH
+
+jobs:
+  rhel8:
+      requires: [~pr, ~commit]
+      template: rust/rhel8
+      steps:
+        - install-rpms: echo "Skipped - no RPM dependencies"
+        - rustfmt: echo "Skipped - my code is art"
+        - build: |
+            cargo build --release
+            ls -l target/release/ssrfsup
+        - test: cargo test --release
+        - package: echo "Skipped - package not labeled for individual sale"
+        - publish: echo "Skipped - do not publish"
+  alma9:
+      requires: [~pr, ~commit]
+      template: rust/alma9
+      steps:
+        - install-rpms: echo "Skipped - no RPM dependencies"
+        - rustfmt: echo "Skipped - my code is art"
+        - build: |
+            cargo build --release
+            ls -l target/release/ssrfsup
+        - test: cargo test --release
+        - package: echo "Skipped - package not labeled for individual sale"
+        - publish: echo "Skipped - do not publish"
