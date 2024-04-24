@@ -1,0 +1,28 @@
+---
+version: 4
+
+annotations:
+  screwdriver.cd/chainPR: true
+
+shared:
+  annotations:
+    screwdriver.cd/cpu: HIGH
+    screwdriver.cd/ram: HIGH
+
+jobs:
+  rhel8:
+      requires: [~pr, ~commit]
+      template: rust/rhel8
+      steps:
+        - test: |
+            cargo test --release
+        - postbuild: |
+            cargo install --path .     
+  alma9:
+      requires: [~pr, ~commit]
+      template: rust/alma9
+      steps:
+        - test: |
+            cargo test --release
+        - postbuild: |
+            cargo install --path .  
