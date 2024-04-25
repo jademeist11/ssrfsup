@@ -25,6 +25,8 @@ use std::{
 use tokio::sync::Semaphore;
 use url::form_urlencoded;
 
+const USER_AGENT : &str = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.3";
+
 static EC_URLSIG_KEY: Lazy<String> = Lazy::new(|| { 
     env::var("EC_URLSIG_KEY").expect("EC_URLSIG_KEY must be set") 
 });
@@ -133,7 +135,7 @@ where P: AsRef<Path>, {
 #[tokio::main]
 async fn main() {
     let env_vars = [
-        ( "EC_URLSIG_KEY", &EC_URLSIG_KEY),  
+        ( "EC_URLSIG_KEY", &EC_URLSIG_KEY ),  
         ( "EC_URLSIG_KEY_VER", &EC_URLSIG_KEY_VER ), 
         ( "EC_MAIL_URLSIG_KEY", &EC_MAIL_URLSIG_KEY ), 
         ( "EC_MAIL_URLSIG_KEY_VER", &EC_MAIL_URLSIG_KEY_VER )
@@ -150,6 +152,7 @@ async fn main() {
 
     let client = reqwest::Client::builder()
         .timeout(Duration::from_secs(args.timeout))
+        .user_agent(USER_AGENT)
         .build()
         .unwrap();
 
