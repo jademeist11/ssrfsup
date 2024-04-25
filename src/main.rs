@@ -8,6 +8,7 @@ use chrono::Utc;
 use clap::Parser;
 use md5;
 use once_cell::sync::Lazy;
+use reqwest::Client;
 use serde::{
     Serialize, 
     Deserialize
@@ -98,12 +99,8 @@ fn generate_proxy_url(proxy_url: &str, base_url: &str, key: &str, ver: &str) -> 
     format!("{}&sig={}", url_to_sign, signature)
 }
 
-async fn process_url(url: String, timeout: u64, semaphore: &Semaphore) -> (String, Result) {
+async fn process_url(url: String, semaphore: &Semaphore, client: &Client) -> (String, Result) {
     let _permit = semaphore.acquire().await.unwrap();
-    let client = reqwest::Client::builder()
-        .timeout(Duration::from_secs(timeout))
-        .build()
-        .unwrap();
 
     let external_status = client.get(&url)
         .send()
@@ -138,7 +135,7 @@ async fn main() {
     let env_vars = [
         ( "EC_URLSIG_KEY", &EC_URLSIG_KEY),  
         ( "EC_URLSIG_KEY_VER", &EC_URLSIG_KEY_VER ), 
-        ( "EC_MAIL_URLSIG_KEY", &EC_MAIL_URLSIG_KEY), 
+        ( "EC_MAIL_URLSIG_KEY", &EC_MAIL_URLSIG_KEY ), 
         ( "EC_MAIL_URLSIG_KEY_VER", &EC_MAIL_URLSIG_KEY_VER )
     ];
 
@@ -151,6 +148,11 @@ async fn main() {
 
     let args = Args::parse();
 
+    let client = reqwest::Client::builder()
+        .timeout(Duration::from_secs(args.timeout))
+        .build()
+        .unwrap();
+
     let semaphore = Arc::new(Semaphore::new(args.threads));
     let mut handles = Vec::new();
 
@@ -158,8 +160,10 @@ async fn main() {
         for line in lines {
             if let Ok(url) = line {
                 let semaphore_clone = Arc::clone(&semaphore);
+                let client_clone = Client::clone(&client);
+
                 handles.push(tokio::spawn(async move {
-                    process_url(url, args.timeout, &semaphore_clone).await
+                    process_url(url, &semaphore_clone, &client_clone).await
                 }));
             }
         }
