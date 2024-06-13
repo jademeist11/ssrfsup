@@ -1,0 +1,392 @@
+{
+  "http://dev.checkout.fantasysports.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.checkout.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.assist.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.beta.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.mysubscriptions.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.shield.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.checkout.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.shield.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.checkout.finance.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.checkout.finance.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.beta.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.checkout.finance.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://internal.apis.mail.yahoo.com/": {
+    "external_status": 0,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://internal.apis.mail.yahoo.com/": {
+    "external_status": 403,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://origin.subscriptions-qa5.fp.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.mysubscriptions.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.get.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.getonline.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.mysubscriptions.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.help.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.checkout.fantasysports.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.blog.productcentral.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.mysubscriptions.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://dev.subscriptions.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://dev.mysubscriptions.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.checkoutnow.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.plans.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.checkout.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.shield.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.help.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.subscriptions.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.assist.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://dev.mysubscriptions.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.mysubscriptions.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.assist.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.checkoutnow.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.get.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.help.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.mysubscriptions.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://www.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.checkout.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.assist.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.blog.productcentral.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.getonline.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.shield.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://www.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.plans.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://origin.subscriptions-qa5.fp.yahoo.com/": {
+    "external_status": 0,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.beta.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.get.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.get.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.getonline.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.getonline.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://dev.mysubscriptions.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.checkout.fantasysports.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.checkout.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.checkout.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.checkout.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.checkout.finance.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://dev.checkout.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://dev.shield.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.subscriptions.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.mysubscriptions.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.mysubscriptions.mail.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.checkout.fantasysports.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.beta.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.subscriptions.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.mysubscriptions.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://stage.blog.productcentral.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.plans.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.plans.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://dev.checkout.finance.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://qa.help.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "http://qa.shield.aol.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.checkout.finance.yahoo.com/": {
+    "external_status": 200,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  },
+  "https://stage.blog.productcentral.aol.com/": {
+    "external_status": 404,
+    "ec_proxy_status": 400,
+    "mail_proxy_status": 400
+  }
+}
