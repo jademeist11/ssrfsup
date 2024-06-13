@@ -8,7 +8,9 @@
             },
             "extensions": [
                 "rust-lang.rust",
-                "matklad.rust-analyzer"
+                "matklad.rust-analyzer",
+                "rust-lang.rust-analyzer",
+                "vadimcn.vscode-lldb"
             ]
             
         }
